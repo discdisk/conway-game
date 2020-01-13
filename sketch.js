@@ -1,7 +1,5 @@
+// based on
 // Daniel Shiffman
-// http://codingtra.in
-// http://patreon.com/codingtrain
-
 // Game of Life
 // Video: https://youtu.be/FWSR_7kZuYg
 
@@ -16,11 +14,11 @@ function make2DArray(cols, rows) {
 let grid;
 let cols;
 let rows;
-let resolution = 10;
+let resolution = 5;
 let speed ;
 
 function setup() {
-  slider = createSlider(0, 5000, 1000);
+  slider = createSlider(0, 1000, 100);
   slider.position(10, 10);
   text = createP('speed:'+slider.value())
   text.position(100, 0);
